@@ -1,0 +1,54 @@
+#calculator{
+    width: 340px;
+    height: 320px;
+    background-color: rgb(22, 22, 22);
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "display display display display display "
+    "numBtn numBtn numBtn opBtn opBtn"
+    "numBtn numBtn numBtn opBtn opBtn"
+    "numBtn numBtn numBtn opBtn opBtn"
+    "numBtn numBtn numBtn opBtn opBtn";
+}
+#display{
+    border: 3px solid white;
+    background-color: rgba(133, 136, 138, 0.301);
+    margin: 5px;
+    border-radius: 5px;
+    grid-area: display;
+    color:white;
+    text-align: right;
+    overflow: hidden;
+}
+#numberButtons {
+    grid-area: numBtn;
+    float:left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#operatorButtons {
+    grid-area: opBtn;
+    float: right;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.btn{
+    margin: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(22, 22, 22);
+    color:white;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+}
+.btn:hover{
+    border-width: 2px;
+}
