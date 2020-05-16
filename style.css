@@ -19,29 +19,31 @@
     border: 3px solid white;
     background-color: rgba(133, 136, 138, 0.301);
     margin: 5px;
+    padding: 16px 5px 0px 0px;
     border-radius: 5px;
     grid-area: display;
     color:white;
     text-align: right;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     overflow: hidden;
 }
 #numberButtons {
     grid-area: numBtn;
-    float:left;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 #operatorButtons {
     grid-area: opBtn;
-    float: right;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 .btn{
     margin: 3px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     background-color: rgb(22, 22, 22);
     color:white;
